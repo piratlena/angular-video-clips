@@ -303,7 +303,7 @@
     </a>
   </div>
 </section>
-<app-auth></app-auth>
+<app-auth *ngIf="!(auth.isAuthenticatedWithDelay$ | async)"></app-auth>
 <!-- Auth Modal -->
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
