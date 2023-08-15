@@ -13,6 +13,7 @@ import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { HomeComponent } from './pages/home/home.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ClipComponent } from './pages/clip/clip.component';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -21,14 +22,16 @@ import { ClipComponent } from './pages/clip/clip.component';
     HomeComponent,
     AboutComponent,
     ClipComponent,
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+
     UserModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,
     VideoModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
