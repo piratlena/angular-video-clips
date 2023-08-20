@@ -3,9 +3,10 @@ import { CommonModule } from '@angular/common';
 import { ManageComponent } from '../pages/manage/manage.component';
 import { UploadComponent } from '../pages/upload/upload.component';
 import { VideoRoutingModule } from './video-routing.module';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   declarations: [ManageComponent, UploadComponent],
-  imports: [CommonModule, VideoRoutingModule],
+  imports: [CommonModule, VideoRoutingModule, SharedModule],
 })
 export class VideoModule {}
